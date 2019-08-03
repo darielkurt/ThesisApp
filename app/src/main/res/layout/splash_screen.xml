@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen">
+
+    <ImageView
+        android:id="@+id/bgSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/startup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/buttonShape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/button_letsflow"
+        app:layout_constraintBottom_toBottomOf="@+id/bgSplash"
+        app:layout_constraintEnd_toEndOf="@+id/bgSplash"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bgSplash"
+        app:layout_constraintVertical_bias="0.874" />
+
+    <TextView
+        android:id="@+id/letsFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LET'S FLOW"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:fontFamily="@riffic"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonShape"
+        app:layout_constraintEnd_toEndOf="@+id/buttonShape"
+        app:layout_constraintStart_toStartOf="@+id/buttonShape"
+        app:layout_constraintTop_toTopOf="@+id/buttonShape" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
