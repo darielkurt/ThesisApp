@@ -10,4 +10,10 @@
     <style name = "splashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/startup</item>
     </style>
+
+    <style name="ConfirmHarvestTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name = "android:windowBackground" >@color/blackTransparent</item>
+    </style>
+
 </resources>

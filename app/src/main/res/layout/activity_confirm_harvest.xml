@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmHarvest"
+    android:background="@color/blackTransparent">
+
+    <ImageView
+        android:id="@+id/popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_confirm_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/confirmMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want\nto harvest FlowFrame 1?"
+        android:textSize="19dp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/popup"
+        app:layout_constraintEnd_toEndOf="@+id/popup"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/popup"
+        app:layout_constraintTop_toTopOf="@id/popup"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/yesOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_yesorno"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="YES"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/popup"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="@+id/popup"
+        app:layout_constraintTop_toBottomOf="@+id/confirmMsg" />
+
+    <TextView
+        android:id="@+id/noOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_yesorno"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="NO"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/popup"
+        app:layout_constraintStart_toEndOf="@+id/yesOption"
+        app:layout_constraintTop_toBottomOf="@+id/confirmMsg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

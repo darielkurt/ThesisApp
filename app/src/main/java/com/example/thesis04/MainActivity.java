@@ -8,12 +8,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.os.Handler;
 import android.view.MenuItem;
-import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.navigation_home:
                             selectedFragment = new HomeFragment();
                             break;
-                        case R.id.navigation_stats:
+                        case R.id.navigation_guide:
                             selectedFragment = new StatsFragment();
                             break;
                     }

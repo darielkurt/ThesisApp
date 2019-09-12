@@ -2,5 +2,5 @@
     <string name="app_name">FlowFive</string>
     <string name="title_home">HOME</string>
     <string name="title_hive">HIVE</string>
-    <string name="title_stats">STATS</string>
+    <string name="title_guide">GUIDE</string>
 </resources>

@@ -1,11 +1,9 @@
 package com.example.thesis04;
 
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -37,8 +35,8 @@ public class HiveAdapter extends RecyclerView.Adapter {
         public HiveViewHolder(View hiveView){
 
             super(hiveView);
-            mHiveText = (TextView) itemView.findViewById(R.id.hiveText);
-            mHiveImage = (ImageView) itemView.findViewById(R.id.hiveImage);
+            mHiveText = itemView.findViewById(R.id.hiveText);
+            mHiveImage = itemView.findViewById(R.id.hiveImage);
             itemView.setOnClickListener(this);
 
         }
