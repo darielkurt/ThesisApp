@@ -12,14 +12,35 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
-        >
+        android:paddingBottom="70dp">
+
+        <ImageButton
+            android:id="@+id/harvest_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_harvest_all"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/frames_text"
+            android:gravity="center"
+            android:background="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/frames_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Frames"
+            android:textColor="#1D1D1D"
+            android:textSize="40sp" />
 
         <!-- Hive Card 1 -->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cardone"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_below="@id/frames_text">
 
             <ImageView
                 android:id="@+id/card1"
@@ -409,7 +430,7 @@
             android:id="@+id/cardseven"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/cardsix">
+            android:layout_below="@id/cardsix" >
 
             <ImageView
                 android:id="@+id/card7"
@@ -467,6 +488,7 @@
                 app:srcCompat="@drawable/ic_harvest_now" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </RelativeLayout>
 

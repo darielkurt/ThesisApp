@@ -13,6 +13,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    DatabaseHelper myDb;
+
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.container,
                 new HomeFragment()).commit();
         bottomNav.getMenu().getItem(1).setChecked(true);
+
+        myDb = new DatabaseHelper(this);
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =

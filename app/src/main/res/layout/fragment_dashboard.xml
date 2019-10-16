@@ -8,7 +8,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    android:paddingBottom="80dp">
 
     <TextView
         android:id="@+id/users_guide"
@@ -52,16 +53,26 @@
                 android:layout_marginTop="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/placeholder" />
+                app:layout_constraintTop_toBottomOf="@id/home_section" />
 
-            <View
-                android:id="@+id/placeholder"
+            <ImageView
+                android:id="@+id/home_section"
                 android:layout_width="330dp"
-                android:layout_height="130dp"
-                android:background="@color/cardview"
+                android:layout_height="160dp"
+                android:src="@drawable/hiveweightt"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--            <View-->
+<!--                android:id="@+id/placeholder"-->
+<!--                android:layout_width="330dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:background="@color/cardview"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
 
             <TextView
                 android:id="@+id/guide_hive_weight_desc"
@@ -86,15 +97,25 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/guide_hive_weight_desc" />
 
-            <View
-                android:id="@+id/placeholder2"
+            <ImageView
+                android:id="@+id/home_sectionBottles"
                 android:layout_width="330dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="20dp"
-                android:background="@color/cardview"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/bottlessfilled"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/guide_hive_weight_ps" />
+                app:layout_constraintTop_toBottomOf="@id/guide_hive_weight_ps" /> />
+
+<!--            <View-->
+<!--                android:id="@+id/placeholder2"-->
+<!--                android:layout_width="330dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@color/cardview"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/guide_hive_weight_ps" />-->
 
             <TextView
                 android:id="@+id/guide_bottles_filled_title"
@@ -107,7 +128,7 @@
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/placeholder2" />
+                app:layout_constraintTop_toBottomOf="@id/home_sectionBottles" />
 
             <TextView
                 android:id="@+id/guide_bottles_filled_desc"
@@ -131,15 +152,25 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/guide_bottles_filled_desc" />
 
-            <View
-                android:id="@+id/placeholder3"
+            <ImageView
+                android:id="@+id/home_sectionWeight"
                 android:layout_width="330dp"
-                android:layout_height="130dp"
-                android:layout_marginTop="20dp"
-                android:background="@color/cardview"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/w888"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/guide_bottles_filled_ps" />
+
+<!--            <View-->
+<!--                android:id="@+id/placeholder3"-->
+<!--                android:layout_width="330dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@color/cardview"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/guide_bottles_filled_ps" />-->
 
             <TextView
                 android:id="@+id/guide_honey_total_title"
@@ -153,7 +184,7 @@
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/placeholder3" />
+                app:layout_constraintTop_toBottomOf="@id/home_sectionWeight" />
 
             <TextView
                 android:id="@+id/guide_honey_total_desc"
@@ -196,11 +227,13 @@
             android:padding="20dp"
             android:background="#FFEA83">
 
-            <View
+
+
+            <ImageView
                 android:id="@+id/placeholder4"
                 android:layout_width="330dp"
-                android:layout_height="130dp"
-                android:background="@color/cardview"
+                android:layout_height="150dp"
+                android:src="@drawable/flowframes"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -213,7 +246,7 @@
                 android:text="HARVEST HONEY"
                 android:textColor="@color/chrome2"
                 android:textSize="30sp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/placeholder4" />
@@ -234,7 +267,7 @@
                 android:id="@+id/guide_harvest_desc2"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
-                android:text="--description for or when harvesting the frame--"
+                android:text="There will be a confirmation dialog to check if you are sure to harvest"
                 android:textColor="@color/chrome2"
                 android:textSize="20sp"
                 android:layout_marginTop="5dp"
@@ -246,7 +279,7 @@
                 android:id="@+id/guide_harvest_desc3"
                 android:layout_width="330dp"
                 android:layout_height="wrap_content"
-                android:text="if the user wishes to just harvest all the frame, the user can select the 'HARVEST ALL' button located at the top right corner"
+                android:text="if the user wishes to just harvest all the frame, the user can select the 'HARVEST ALL' button"
                 android:textColor="@color/chrome2"
                 android:textSize="20sp"
                 android:layout_marginTop="5dp"
@@ -254,16 +287,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/guide_harvest_desc2" />
 
-            <TextView
-                android:id="@+id/randd"
-                android:layout_width="330dp"
-                android:layout_height="wrap_content"
-                android:text="displays the overall weight of the honey harvested from the prototype"
-                android:textColor="@color/chrome2"
-                android:textSize="21sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/guide_harvest_desc3" />
+<!--            <TextView-->
+<!--                android:id="@+id/randd"-->
+<!--                android:layout_width="330dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="displays the overall weight of the honey harvested from the prototype"-->
+<!--                android:textColor="@color/chrome2"-->
+<!--                android:textSize="21sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/guide_harvest_desc3" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

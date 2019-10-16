@@ -1,20 +1,14 @@
 package com.example.thesis04;
 
-import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
-
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class HiveFragment extends Fragment {
 
@@ -25,6 +19,8 @@ public class HiveFragment extends Fragment {
     ImageButton button5;
     ImageButton button6;
     ImageButton button7;
+    TextView confirmation;
+    ImageButton mHarvesetAll;
 
     @Nullable
     @Override
@@ -32,6 +28,7 @@ public class HiveFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.new_hive,container,false);
+        View v = inflater.inflate(R.layout.activity_confirm_harvest,container,false);
         button1 = view.findViewById(R.id.imageButton1);
         button2 = view.findViewById(R.id.imageButton2);
         button3 = view.findViewById(R.id.imageButton3);
@@ -39,60 +36,78 @@ public class HiveFragment extends Fragment {
         button5 = view.findViewById(R.id.imageButton5);
         button6 = view.findViewById(R.id.imageButton6);
         button7 = view.findViewById(R.id.imageButton7);
+        mHarvesetAll = view.findViewById(R.id.harvest_all);
+        confirmation = v.findViewById(R.id.confirmMsg);
+
+        mHarvesetAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogFragment dialog = new DialogFragment();
+                dialog.show(getFragmentManager(), "Confirm Dialog");
+                dialog.MSetText(8);
+            }
+        });
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getApplicationContext(),ConfirmHarvest.class);
-                startActivity(i);
+                DialogFragment dialog = new DialogFragment();
+                dialog.show(getFragmentManager(), "Confirm Dialog");
+                dialog.MSetText(1);
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getApplicationContext(),ConfirmHarvest.class);
-                startActivity(i);
+                DialogFragment dialog = new DialogFragment();
+                dialog.show(getFragmentManager(), "Confirm Dialog");
+                dialog.MSetText(2);
             }
         });
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getApplicationContext(),ConfirmHarvest.class);
-                startActivity(i);
+                DialogFragment dialog = new DialogFragment();
+                dialog.show(getFragmentManager(), "Confirm Dialog");
+                dialog.MSetText(3);
             }
         });
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getApplicationContext(),ConfirmHarvest.class);
-                startActivity(i);
+                DialogFragment dialog = new DialogFragment();
+                dialog.show(getFragmentManager(), "Confirm Dialog");
+                dialog.MSetText(4);
             }
         });
 
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getApplicationContext(),ConfirmHarvest.class);
-                startActivity(i);
+                DialogFragment dialog = new DialogFragment();
+                dialog.show(getFragmentManager(), "Confirm Dialog");
+                dialog.MSetText(5);
             }
         });
 
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getApplicationContext(),ConfirmHarvest.class);
-                startActivity(i);
+                DialogFragment dialog = new DialogFragment();
+                dialog.show(getFragmentManager(), "Confirm Dialog");
+                dialog.MSetText(6);
             }
         });
 
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity().getApplicationContext(),ConfirmHarvest.class);
-                startActivity(i);
+                DialogFragment dialog = new DialogFragment();
+                dialog.show(getFragmentManager(), "Confirm Dialog");
+                dialog.MSetText(7);
             }
         });
 
