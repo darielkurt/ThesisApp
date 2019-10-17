@@ -24,9 +24,9 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-        letsFlow = (TextView) findViewById(R.id.letsFlow);
-        bgSplash = (ImageView) findViewById(R.id.bgSplash);
-        buttonShape = (ImageView) findViewById(R.id.buttonShape);
+        letsFlow = findViewById(R.id.letsFlow);
+        bgSplash = findViewById(R.id.bgSplash);
+        buttonShape = findViewById(R.id.buttonShape);
 
         letsFlow.setTypeface(riffic);
 

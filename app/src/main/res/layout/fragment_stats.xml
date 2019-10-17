@@ -4,10 +4,5 @@
     android:layout_height="match_parent"
     android:background="#FEDD1C">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="STATS"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+
 </RelativeLayout>

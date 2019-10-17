@@ -8,34 +8,164 @@
     tools:context=".HomeFragment"
     android:background="@color/colorBackground">
 
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/total_honey_weight"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <!-- HIVE WEIGHT -->
 
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="210dp"
+        android:id="@+id/hive_weight_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/homecard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/hive_weight_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:src="@drawable/hive_weight"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintEnd_toEndOf="@+id/hive_weight_card"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="@+id/hive_weight_card"
+        app:layout_constraintTop_toTopOf="@+id/hive_weight_card" />
+
+    <TextView
+        android:id="@+id/hive_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="Hive Weight:"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/hive_weight_card"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/hive_weight_img"
+        app:layout_constraintTop_toTopOf="@+id/hive_weight_card" />
+
+    <TextView
+        android:id="@+id/hive_weight_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
+        android:text="20.05 kg"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/hive_weight_card"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toEndOf="@+id/hive_weight_img"
+        app:layout_constraintTop_toBottomOf="@+id/hive_weight_text" />
+
+    <!-- BOTTLES FILLED -->
 
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="410dp"
-        android:src="@drawable/bottles_filled"
+        android:id="@+id/bottles_filled_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homecard"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/hive_weight_card" />
+
+
+    <ImageView
+        android:id="@+id/bottles_filled_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/bottles_filled"
+        app:layout_constraintEnd_toEndOf="@+id/bottles_filled_card"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@+id/bottles_filled_card"
+        app:layout_constraintTop_toTopOf="@+id/bottles_filled_card" />
+
+    <TextView
+        android:id="@+id/bottles_filled_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:text="Bottles Filled:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/bottles_filled_img"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/bottles_filled_card"
+        app:layout_constraintTop_toTopOf="@+id/bottles_filled_card" />
+
+    <TextView
+        android:id="@+id/bottles_filled_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
+        android:text="48 bottles"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/bottles_filled_img"
+        app:layout_constraintStart_toStartOf="@+id/bottles_filled_card"
+        app:layout_constraintTop_toBottomOf="@+id/bottles_filled_text" />
+
+    <!-- TOTAL WEIGHT -->
+
+    <ImageView
+        android:id="@+id/total_weight_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homecard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottles_filled_card" />
+
+
+    <ImageView
+        android:id="@+id/total_weight_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/total_harvested"
+        app:layout_constraintEnd_toEndOf="@+id/total_weight_card"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="@+id/total_weight_card"
+        app:layout_constraintTop_toTopOf="@+id/total_weight_card" />
+
+    <TextView
+        android:id="@+id/total_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/ubuntu_mono_bold"
+        android:gravity="center"
+        android:text="Harvested Honey\nTotal Weight:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/total_weight_card"
+        app:layout_constraintStart_toEndOf="@+id/total_weight_img"
+        app:layout_constraintTop_toTopOf="@+id/total_weight_card" />
+
+    <TextView
+        android:id="@+id/total_weight_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
+        android:text="54.62 kg"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/total_weight_card"
+        app:layout_constraintStart_toEndOf="@+id/total_weight_img"
+        app:layout_constraintTop_toBottomOf="@+id/total_weight_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
