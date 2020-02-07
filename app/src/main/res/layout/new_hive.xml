@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -18,11 +19,15 @@
             android:id="@+id/harvest_all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_harvest_all"
-            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/frames_text"
+            android:background="@color/transparent"
             android:gravity="center"
-            android:background="@color/transparent"/>
+            android:src="@drawable/ic_harvest_all" />
 
         <TextView
             android:id="@+id/frames_text"
@@ -488,6 +493,22 @@
                 app:srcCompat="@drawable/ic_harvest_now" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Switch
+            android:id="@+id/connectbutton"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="25dp"
+            android:layout_toEndOf="@+id/harvest_all"
+            android:fontFamily="@font/ubuntu_mono_bold"
+            android:text="Connect"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="302dp"
+            tools:layout_editor_absoluteY="-6dp" />
 
 
     </RelativeLayout>
